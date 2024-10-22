@@ -31,7 +31,7 @@ void ingresarDatos(char nombres[][50], float precios[], int cantidades[], int nu
             printf("Ingrese el precio del producto %d: ", i + 1);
             fgets(buffer, sizeof(buffer), stdin);
             if (sscanf(buffer, "%f", &precios[i]) != 1) {
-                printf("Error: Ingrese un número válido para el precio.\n");
+                printf("Error: Ingrese un numero valido para el precio.\n");
             } else if (precios[i] < 0) {
                 printf("Error: El precio no puede ser negativo.\n");
             } else {
@@ -45,7 +45,7 @@ void ingresarDatos(char nombres[][50], float precios[], int cantidades[], int nu
             printf("Ingrese la cantidad del producto %d: ", i + 1);
             fgets(buffer, sizeof(buffer), stdin);
             if (!esNumeroEntero(buffer)) {
-                printf("Error: Ingrese un número entero válido para la cantidad.\n");
+                printf("Error: Ingrese un numero entero valido para la cantidad.\n");
             } else {
                 sscanf(buffer, "%d", &cantidades[i]);  // Convertir a entero después de la validación
                 if (cantidades[i] < 0) {
